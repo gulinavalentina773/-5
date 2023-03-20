@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+<body>
+    <h1>Анкета посетителя ресторана</h1>
+    <h3>Контактная информация</h3>
+    <form action="">
+        <p>
+            <label for="name">Имя</label> <br/>
+            <input id="name" type="text" placeholder="Имя" name="name" required>
+        </p>
+
+        <p>
+            <label for="telefon">Телефон</label> <br/>
+            <input id="telefon" type="text" placeholder="Телефон" name="telefon" required>
+        </p>
+
+        <p>
+            <label for="email">Email</label> <br/>
+            <input id="email" type="email" placeholder="Email" name="email" required>
+        </p>
+        
+        <p>
+            <label for="date">Дата посещения</label> <br/>
+            <input id="date" type="date"  name="date" required>
+        </p>
+
+        <h3>Персональная информация</h3>
+
+        <p>
+            <label for="vozrast">Возраст</label> <br/>
+            <input id="vozrast" type="text" placeholder="Возраст" name="vozrast" required>
+        </p>
+
+        <p>
+            <label for="kuhnya">Любимая кухня</label> <br/>
+            <select name="kuhnya" id="kuhnya" required>
+                <option value="Русская">Русская</option>
+                <option value="Китайская">Китайская</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="bluda">Какие блюда вы бы хотели увидеть в меню</label> <br/>
+            <textarea name="bluda" id="bluda" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <h4>Почему вы выбрали наше заведение?</h4>
+            <label>                
+                <img src="./kniga.png" alt="" width="15">
+                <input type="checkbox">
+                Недалеко от работы
+            </label> </br>
+
+            <label> 
+                <img src="./kniga.png" alt="" width="15"> 
+                <input type="checkbox">
+                Реклама
+            </label> </br>
+
+            <label>
+                <img src="./kniga.png" alt="" width="15">
+                <input type="checkbox">
+                Посоветовали
+            </label>
+        </p>
+
+        <p>
+            <h4>Вы будете рекомендовать наше заведение?</h4>
+            <label>
+                <img src="./kniga.png" alt="" width="15">
+                <input type="checkbox">
+                Да
+            </label> </br>
+
+            <label>
+                <img src="./kniga.png" alt="" width="15">
+                <input type="checkbox">
+                Нет
+            </label>
+        </p>
+
+        <p>
+            <!-- <input type="button" value="Сброс"> -->
+            <input type="reset" value="Сброс">
+        
+            <!-- <input type="button" value="Отправить форму"> -->
+            <input type="submit" value="Отправить форму">
+        </p>
+
+    </form>
+</body>
+</html>
